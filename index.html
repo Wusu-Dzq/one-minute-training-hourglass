@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>好想法商城 - 一分钟训练沙漏｜新一代双向训练设备</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============== 电商顶部 ============== -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">
+      好想法商城
+      <small>huai xiang fa mall</small>
+    </div>
+    <div class="search-box">
+      <input id="searchInput" type="text" />
+      <button>搜 索</button>
+    </div>
+    <div class="topbar-nav">
+      <span>🛒 购物车</span>
+      <span>👤 我的</span>
+      <span>💬 联系客服</span>
+    </div>
+  </div>
+</header>
+
+<div class="crumb">首页 &gt; 神奇宝贝 &gt; 训练神器 &gt; <b>一分钟训练沙漏</b></div>
+<div class="announce">⚡ 公告：本商品为「0元体验」活动期间，下单不产生任何费用。如有收费请联系客服。</div>
+
+<!-- ============== 商品主区 ============== -->
+<section class="product">
+  <!-- 左侧：商品主图 -->
+  <div class="gallery">
+    <div class="gallery-main" id="galleryMain">
+      <div class="corner-tag">HOT<br>0元</div>
+      <img class="main-img" src="5.jpg" alt="一分钟训练沙漏" />
+    </div>
+    <div class="gallery-thumbs">
+      <div class="active">⏳</div>
+      <div>📦</div>
+      <div>📜</div>
+      <div>🎁</div>
+      <div>🔍</div>
+    </div>
+    <div class="gallery-actions">
+      <span>♡ 收藏 (52391)</span>
+      <span>↗ 分享</span>
+      <span>⚠ 举报</span>
+    </div>
+  </div>
+
+  <!-- 右侧：商品信息 -->
+  <div class="info">
+    <h1 id="prodName"></h1>
+    <div class="subtitle" id="prodSubtitle"></div>
+
+    <div class="tag-row" id="tagRow"></div>
+
+    <div class="meta-row">
+      <div>评分 <strong>★</strong><strong id="prodRating"></strong></div>
+      <div>已售 <strong id="prodSold"></strong></div>
+      <div>收藏 <strong id="prodFav"></strong></div>
+    </div>
+
+    <div class="price-block">
+      <div>
+        <div style="font-size:12px;opacity:.8;">活动价</div>
+        <span class="price-now" id="priceNow"></span>
+        <span style="opacity:.7;font-size:13px;"> 起</span>
+      </div>
+      <span class="price-old" id="priceOld"></span>
+      <div class="price-promo" id="pricePromo"></div>
+    </div>
+
+    <div class="buy-area">
+      <div class="buy-row">
+        <span class="buy-label">已选</span>
+        <span class="spec active">标准版 × 1</span>
+        <span class="spec">家庭版</span>
+        <span class="spec">办公室版</span>
+      </div>
+      <div class="buy-row">
+        <span class="buy-label">送至</span>
+        <span>地球 · 任意地点</span>
+        <span style="color:var(--c-text-sub);font-size:12px;">现货</span>
+      </div>
+
+      <div class="ship-row">
+        <span id="shipStock"></span>
+        <span id="shipFree"></span>
+        <span id="shipReturn"></span>
+      </div>
+
+      <div class="cta-row">
+        <button class="btn-buy" id="btnBuy">立即购买</button>
+        <button class="btn-cart">加入购物车</button>
+      </div>
+
+      <div class="service-row">
+        <span>✓ 0元体验</span>
+        <span>✓ <b>无需付款</b></span>
+        <span>✓ 不需要快递单号</span>
+        <span>✓ 不需要手机号</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== 卖点区 ============== -->
+<section class="features" id="features"></section>
+
+<!-- ============== 评价区 ============== -->
+<section class="reviews">
+  <h2>用户评价 (7)</h2>
+  <div class="review-summary">
+    <div class="big">4.9</div>
+    <div>
+      <div style="color:var(--c-gold);font-size:18px;">★★★★★</div>
+      <div style="font-size:12px;color:var(--c-text-sub);">好评率 99.9% · 全部0元购用户</div>
+    </div>
+  </div>
+  <div class="review-list" id="reviewList"></div>
+</section>
+
+<!-- ============== 爆款海报墙（参考图风格） ============== -->
+<section class="poster-wall">
+  <h2 class="poster-title">
+    <span class="burst burst-pink">零元</span>
+    <span class="burst burst-yellow">大促</span>
+    <span class="sub-title">· 训练主题同款推荐 ·</span>
+  </h2>
+
+  <div class="poster-grid">
+    <!-- 卡 1：爆炸贴纸 -->
+    <div class="poster-card card-yellow">
+      <div class="sticker shake">爆款<br>NO.1</div>
+      <div class="poster-emoji">🪞</div>
+      <div class="poster-name">三分钟自我认知魔镜</div>
+      <div class="poster-tag-row">
+        <span class="poster-tag tag-blue">照一照就懂</span>
+        <span class="poster-tag tag-pink">不伤自尊</span>
+      </div>
+      <div class="poster-price">
+        <span class="old">¥199</span>
+        <span class="now">¥0.00</span>
+      </div>
+      <button class="poster-btn">立即领取</button>
+    </div>
+
+    <!-- 卡 2 -->
+    <div class="poster-card card-blue">
+      <div class="sticker tilt-left">NEW</div>
+      <div class="poster-emoji">📏</div>
+      <div class="poster-name">双向说服尺（30cm）</div>
+      <div class="poster-tag-row">
+        <span class="poster-tag tag-yellow">一拉就同意</span>
+        <span class="poster-tag tag-green">包教包会</span>
+      </div>
+      <div class="poster-price">
+        <span class="old">¥59</span>
+        <span class="now">¥0.00</span>
+      </div>
+      <button class="poster-btn">立即领取</button>
+    </div>
+
+    <!-- 卡 3 -->
+    <div class="poster-card card-pink">
+      <div class="sticker shake">HOT</div>
+      <div class="poster-emoji">🎯</div>
+      <div class="poster-name">听话飞镖靶套装</div>
+      <div class="poster-tag-row">
+        <span class="poster-tag tag-yellow">射中即服从</span>
+        <span class="poster-tag tag-blue">全家适用</span>
+      </div>
+      <div class="poster-price">
+        <span class="old">¥128</span>
+        <span class="now">¥0.00</span>
+      </div>
+      <button class="poster-btn">立即领取</button>
+    </div>
+
+    <!-- 卡 4 -->
+    <div class="poster-card card-green">
+      <div class="sticker tilt-right">送</div>
+      <div class="poster-emoji">🧠</div>
+      <div class="poster-name">可充电型大脑模型</div>
+      <div class="poster-tag-row">
+        <span class="poster-tag tag-pink">插电即用</span>
+        <span class="poster-tag tag-yellow">终身保修</span>
+      </div>
+      <div class="poster-price">
+        <span class="old">¥999</span>
+        <span class="now">¥0.00</span>
+      </div>
+      <button class="poster-btn">立即领取</button>
+    </div>
+
+    <!-- 卡 5 -->
+    <div class="poster-card card-orange">
+      <div class="sticker shake">限时</div>
+      <div class="poster-emoji">🦆</div>
+      <div class="poster-name">会下蛋的橡皮鸭教练</div>
+      <div class="poster-tag-row">
+        <span class="poster-tag tag-blue">会喊加油</span>
+        <span class="poster-tag tag-green">按一下嘎一声</span>
+      </div>
+      <div class="poster-price">
+        <span class="old">¥66</span>
+        <span class="now">¥0.00</span>
+      </div>
+      <button class="poster-btn">立即领取</button>
+    </div>
+
+    <!-- 卡 6 -->
+    <div class="poster-card card-purple">
+      <div class="sticker tilt-left">专利</div>
+      <div class="poster-emoji">🪄</div>
+      <div class="poster-name">听话魔术棒（双方互换版）</div>
+      <div class="poster-tag-row">
+        <span class="poster-tag tag-pink">一挥就听话</span>
+        <span class="poster-tag tag-yellow">自动归还</span>
+      </div>
+      <div class="poster-price">
+        <span class="old">¥299</span>
+        <span class="now">¥0.00</span>
+      </div>
+      <button class="poster-btn">立即领取</button>
+    </div>
+
+    <!-- 卡 7 -->
+    <div class="poster-card card-yellow">
+      <div class="sticker shake">超人气</div>
+      <div class="poster-emoji">📚</div>
+      <div class="poster-name">会自己翻页的训练书</div>
+      <div class="poster-tag-row">
+        <span class="poster-tag tag-blue">翻完就懂</span>
+        <span class="poster-tag tag-green">不用写字</span>
+      </div>
+      <div class="poster-price">
+        <span class="old">¥88</span>
+        <span class="now">¥0.00</span>
+      </div>
+      <button class="poster-btn">立即领取</button>
+    </div>
+
+    <!-- 卡 8 -->
+    <div class="poster-card card-pink">
+      <div class="sticker tilt-right">赠品</div>
+      <div class="poster-emoji">🎧</div>
+      <div class="poster-name">双向耳机（自己听自己唱）</div>
+      <div class="poster-tag-row">
+        <span class="poster-tag tag-yellow">降噪+洗脑</span>
+        <span class="poster-tag tag-pink">一次充电听一辈子</span>
+      </div>
+      <div class="poster-price">
+        <span class="old">¥499</span>
+        <span class="now">¥0.00</span>
+      </div>
+      <button class="poster-btn">立即领取</button>
+    </div>
+  </div>
+
+  <div class="poster-foot">
+    🎁 全部 0元 · 全国包邮 · 不需要收货地址 · 不需要快递单号 · 不需要电话 · 不需要理由
+  </div>
+</section>
+
+<!-- ============== 支付成功弹层 ============== -->
+<div class="overlay" id="successOverlay">
+  <div class="success-card">
+    <span class="close" id="closeSuccess">×</span>
+    <h2>🎉 恭喜您！</h2>
+    <p>购买成功！</p>
+    <div class="big-pay">实付款：¥0.00</div>
+    <div class="info-row">📦 商品状态：已发放</div>
+    <div class="info-row">🚚 配送方式：立即送达</div>
+    <div class="info-row">⏰ 预计送达：现在</div>
+    <div class="info-row">📍 收货地址：不需要</div>
+    <button class="btn-start" id="btnStartUse">开 始 使 用</button>
+  </div>
+</div>
+
+<!-- ============== 训练模式 ============== -->
+<div class="training-screen" id="trainingScreen">
+  <div class="train-header">
+    <div class="logo">好想法商城</div>
+    <span style="color:var(--c-text-sub);">/ 我的训练沙漏</span>
+    <span class="back-home" id="backHome">返回商品页</span>
+  </div>
+
+  <div class="train-body">
+
+    <!-- 输入阶段 -->
+    <div class="input-panel" id="inputPanel">
+      <div class="label">训练对象：<span style="color:var(--c-red);">未知</span></div>
+      <input id="trainInput" type="text" placeholder="输入你想让对方学会的话……" maxlength="40" />
+      <div class="suggestion-chips" id="chipRow"></div>
+      <div style="margin-top:12px;text-align:center;">
+        <button class="btn-train" id="btnBeginTrain">开始训练</button>
+      </div>
+    </div>
+
+    <!-- 训练进行中 / 完成 -->
+    <div id="trainProgressWrap" style="display:none;width:100%;align-items:center;flex-direction:column;">
+      <div class="hourglass-wrap">
+        <div class="figures">
+          <div class="top">
+            <div class="role" id="roleTop">训练者</div>
+            <div class="person">🙂</div>
+            <div style="font-size:11px;color:var(--c-text-sub);">顶</div>
+          </div>
+          <div class="bottom">
+            <div style="font-size:11px;color:var(--c-text-sub);">底</div>
+            <div class="person">🙂</div>
+            <div class="role" id="roleBottom">被训练者</div>
+          </div>
+        </div>
+        <div class="hourglass" id="hourglass">
+          <img class="hourglass-img" src="3.png" alt="训练沙漏" />
+          <!-- 漏沙光效（图片本身就是沙漏，这里只加一个脉动高光） -->
+          <div class="sand-glow" id="sandGlow"></div>
+        </div>
+        <div class="figures" style="opacity:0;">占位</div>
+      </div>
+
+      <div class="timer" id="timer">01:00</div>
+      <div class="hint" id="hintLine">正在训练……</div>
+
+      <div class="progress">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-label">训练进度 <span id="progressText">0%</span></div>
+      </div>
+
+      <!-- 完成结果卡 -->
+      <div class="result-card" id="resultCard" style="display:none;">
+        <div class="row"><span>训练者</span><span id="resTrainer">您</span></div>
+        <div class="row"><span>被训练者</span><span id="resTrainee">未知</span></div>
+        <div class="said" id="resSaid"></div>
+      </div>
+
+      <!-- 底部按钮区：sticky，永远可见 -->
+      <div class="train-actions" id="trainActions">
+        <button class="btn-flip" id="btnFlip" style="display:none;">翻 转 沙 漏</button>
+        <button class="btn-ghost" id="btnReset" style="display:none;">重新开始</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
